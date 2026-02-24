@@ -46,6 +46,7 @@ def banner():
     except Exception as e:
         print(f"Error reading file: {e}")
 
+banner()
 print("                 PureCrack Menu")
 print(" 1. Start Server")
 print(" 2. Connect")
@@ -68,4 +69,5 @@ elif int(num) == 2:
     clear()
     banner()
     print()
+
     Connect.startPCS(str(conHost), int(conPort))
